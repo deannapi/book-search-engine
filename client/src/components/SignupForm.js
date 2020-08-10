@@ -4,7 +4,11 @@ import { Form, Button, Alert } from 'react-bootstrap';
 import { createUser } from '../utils/API';
 import Auth from '../utils/auth';
 
+import { ADD_USER } from '../utils/mutations';
+import { useMutation } from '@apollo/react-hooks';
+
 const SignupForm = () => {
+  const [addUser, { error }] = useMutation(ADD_USER);
   // set initial form state
   const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
   // set state for form validation
