@@ -1,10 +1,10 @@
+<div align="center">
+
 ![GitHub top language](https://img.shields.io/github/languages/top/deannapi/book-search-engine)
 ![GitHub repo size](https://img.shields.io/github/repo-size/deannapi/book-search-engine)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/deannapi/book-search-engine)
 ![GitHub](https://img.shields.io/github/license/deannapi/book-search-engine)
 ![GitHub last commit](https://img.shields.io/github/last-commit/deannapi/book-search-engine)
-
-<div align="center">
 
 ![](mern-image.jpg)
 
