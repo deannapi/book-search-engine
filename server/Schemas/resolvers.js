@@ -1,7 +1,6 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Book } = require('../models');
+const { User, bookSchema } = require('../models');
 const { signToken } = require('../utils/auth');
-const auth = require('../utils/auth');
 
 const resolvers = {
     Query: {
@@ -40,14 +39,17 @@ const resolvers = {
             return { token, user };
         },
 
-        saveBook: async (parent, { input }, context) => {
+        saveBook: async (parent, context) => {
             if (context.user) {
-                const updatedUser = await User.findByIdAndUpdate(
-                    { _id: context.user._id },
-                    { $addToSet: { savedBooks: input }},
-                    { new: true }
+                const book = await bookSchema.create({ ...args, username: context.user.username });
+            
+                await User.findByIdAndUpdate(
+                  { _id: context.user._id },
+                  { $push: { book: book.bookId } },
+                  { new: true }
                 );
-                return updatedUser;
+            
+                return book;
             }
             throw new AuthenticationError('You are not logged in!');
         },
