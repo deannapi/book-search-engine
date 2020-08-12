@@ -10,6 +10,8 @@ A Google Books API search engine built using the MERN stack, with a React front 
 
 [Find Books Here!](https://books-from-google.herokuapp.com/)
 
+![](screenshot-book.jpg)
+
 # :memo:Description
 
     AS AN avid reader
