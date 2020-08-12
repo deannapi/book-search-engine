@@ -4,6 +4,9 @@
 ![GitHub](https://img.shields.io/github/license/deannapi/book-search-engine)
 ![GitHub last commit](https://img.shields.io/github/last-commit/deannapi/book-search-engine)
 
+<div align="center">
+
+![](mern-image.jpg)
 
 # :books: Book Search Engine :books:
 A Google Books API search engine built using the MERN stack, with a React front end, MongoDB database, and Node.js/Express.js server and API.
@@ -12,7 +15,7 @@ A Google Books API search engine built using the MERN stack, with a React front 
 
 ![](screenshot-book.jpg)
 
-# :memo:Description
+# :memo:Description </div>
 
     AS AN avid reader
     I WANT to search for new books to read
