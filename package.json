@@ -1,5 +1,6 @@
 {
-  "name": "googlebooks-app",
+  "name": "google-book-search-engine",
+  "homepage": "https://github.com/deannapi/book-search-engine",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -12,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@work.github.com:deannapi/book-search-engine.git"
+    "url": "https://github.com/deannapi/book-search-engine"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
     "apollo-boost": "^0.4.9",
