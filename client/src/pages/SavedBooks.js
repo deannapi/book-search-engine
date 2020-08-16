@@ -60,15 +60,17 @@ const SavedBooks = () => {
         variables: { bookId },
       });
 
+      console.log(data);
+
       if (error) {
         throw new Error("Something went wrong!");
       }
 
       // upon success, remove book's id from localStorage
-      console.log(data);
       removeBookId(bookId);
     } catch (err) {
       console.error(err);
+      
     }
   };
 
