@@ -1,5 +1,5 @@
 {
-  "name": "google-book-search-engine",
+  "name": "googlebooks-app",
   "homepage": "https://github.com/deannapi/book-search-engine",
   "version": "1.0.0",
   "description": "",
@@ -16,7 +16,7 @@
     "url": "https://github.com/deannapi/book-search-engine"
   },
   "keywords": [],
-  "author": "DeAnna Matinez",
+  "author": "DeAnna Martinez",
   "license": "MIT",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
